@@ -1,12 +1,7 @@
-server:
-  port: 8082
-Spring:
-  jpa:
-    hibernate.ddl-auto: update
-    show-sql: true
-    generate-ddl: true
-  datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/products?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrival=true
-    username: root
-    password:
+spring:
+  application:
+    name: producto
+  profiles:
+    active: development
+  config:
+    import: optional:configserver:http://root:s3cr3t@localhost:8084
