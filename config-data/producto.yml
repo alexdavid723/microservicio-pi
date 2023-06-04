@@ -1,11 +1,12 @@
 server:
   port: 8082
-  springdoc:
-    api-doc:
-      enabled: true
-    swagger-ui:
-      enabled: true
-      path: /doc/swagger-ui.html
+springdoc:
+  api-doc:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /doc/swagger-ui.html
+
 Spring:
   jpa:
     hibernate.ddl-auto: update
