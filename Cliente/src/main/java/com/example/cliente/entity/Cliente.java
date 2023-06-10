@@ -20,6 +20,7 @@ public class Cliente {
     private String nombres;
     private String apellidos;
     private String dni;
+    private String sexo;
     private String direccion;
-    private String estado;
+    private String telefono;
 }
