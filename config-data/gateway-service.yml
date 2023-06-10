@@ -11,11 +11,11 @@ spring:
         locator:
           enable: true
       routes:
-      - id: cliente
-        uri: lb://cliente
-        predicates:
-          -Path=/cliente/**
-      - id: producto
-        uri: lb://producto
-        predicates:
-          -Path=/producto/**
+        - id: cliente
+          uri: lb://cliente
+          predicates:
+            -Path=/cliente/**
+        - id: producto
+          uri: lb://producto
+          predicates:
+            -Path=/producto/**
