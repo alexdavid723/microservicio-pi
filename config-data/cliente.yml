@@ -17,6 +17,10 @@ Spring:
     url: jdbc:mysql://localhost:3306/clients?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrival=true
     username: root
     password:
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8090}
 
 
 
