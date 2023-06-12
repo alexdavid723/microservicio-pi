@@ -27,3 +27,7 @@ spring:
           uri: lb://cliente
           predicates:
             - Path=/cliente
+        - id: producto
+          uri: lb://producto
+          predicates:
+            - Path=/producto
