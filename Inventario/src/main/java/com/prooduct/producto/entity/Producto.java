@@ -13,15 +13,15 @@ import lombok.NoArgsConstructor;
 public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    private String nombre;
-    private String descripcion;
-    private String codigo;
-    private double precio;
-    private int stock;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "categoria_id")
-    @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
-    private Categoria categoria;
+        private Integer id;
+        private String nombre;
+        private String descripcion;
+        private String codigo;
+        private double precio;
+        private int stock;
+        @ManyToOne(fetch = FetchType.LAZY)
+        @JoinColumn(name = "categoria_id")
+        @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
+        private Categoria categoria;
 
 }
