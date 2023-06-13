@@ -1,6 +1,6 @@
 spring:
   application:
-    name: producto
+    name: inventario-service
   profiles:
     active: development
   config:

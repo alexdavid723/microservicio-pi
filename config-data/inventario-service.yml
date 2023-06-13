@@ -14,7 +14,7 @@ Spring:
     generate-ddl: true
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/products?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrival=true
+    url: jdbc:mysql://localhost:3306/inventario?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrival=true
     username: root
     password:
 eureka:
