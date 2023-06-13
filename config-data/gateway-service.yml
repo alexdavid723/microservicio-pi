@@ -31,3 +31,7 @@ spring:
           uri: lb://inventario-service
           predicates:
             - Path=/categoria/**,/producto/**
+        - id: venta-service
+          uri: lb://venta-service
+          predicates:
+            - Path=/venta/**
